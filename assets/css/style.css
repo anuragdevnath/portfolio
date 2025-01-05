@@ -98,7 +98,7 @@
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
   --font-size-b1: 18px;
-  --font-size-b2: 22px;
+  --font-size-b2: 10px;
   --font-size-b3: 14px;
   --line-height-b1: 1.5;
   --line-height-b2: 1.6;
@@ -20675,3 +20675,108 @@ body.white-version {
 }
 
 /*# sourceMappingURL=../maps/style.css.map */
+div#send-message {
+  margin-top: 16px;
+}
+
+.rn-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* Adjust spacing between tabs as needed */
+  padding: 0;
+  /* Optional: Remove default padding */
+}
+
+.rn-nav-list .nav-item {
+  list-style: none;
+  /* Ensure clean appearance */
+}
+
+.nav-link {
+  text-transform: capitalize;
+  /* Keeps 'Education' and 'Professional Skills' readable */
+  font-weight: 500;
+  /* Adjusts the font weight for better readability */
+}
+
+.que {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style the form */
+#send-message form {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Golden borders for input and textarea */
+.form-control {
+  border: 1px solid #d4af37 !important;
+  color: #d4af37;
+  background-color: transparent;
+  border-radius: 5px !important;
+  /* Rounded edges */
+  padding: 10px !important;
+  /* Better spacing inside fields */
+}
+
+/* Golden text inside the form */
+.form-control::placeholder {
+  color: #d4af37 !important;
+  /* Light golden placeholder */
+}
+
+/* Label color */
+.form-label {
+  color: #d4af37 !important;
+}
+
+/* Style the button */
+.btn-primary {
+  background-color: #d4af37 !important;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: rgb(255, 183, 0);
+}
+
+/* Center the content */
+.center-div {
+  text-align: center;
+}
+
+/* Style for the social icons */
+.social-share {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.social-share li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-share li a:hover {
+  background-color: goldenrod;
+}
