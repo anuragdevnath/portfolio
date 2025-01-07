@@ -421,3 +421,27 @@
 
 
 })(jQuery, window)
+
+const toggleSwitch = document.getElementById("toggleButton");
+
+toggleSwitch.addEventListener("change", () => {
+  if (toggleSwitch.checked) {
+    // Enable Dark Mode
+    document.body.style.filter = "invert(1)";
+    document.body.style.backgroundColor = "#000";
+
+    // Reset the inversion for images and videos
+    document.querySelectorAll("img, video").forEach(el => {
+      el.style.filter = "invert(1)";
+    });
+  } else {
+    // Disable Dark Mode
+    document.body.style.filter = "";
+    document.body.style.backgroundColor = "";
+
+    // Reset filter for images and videos
+    document.querySelectorAll("img, video").forEach(el => {
+      el.style.filter = "";
+    });
+  }
+});
